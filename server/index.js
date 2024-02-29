@@ -14,7 +14,7 @@ app.use(express.json({ limit: "50mb" }));
 app.use('/api/v1/post', postRoutes);
 app.use('/api/v1/masterai', masteraiRoutes);
 app.get("/", async (req, res) => {
-  res.status(200).send("Hello Master AI");
+  res.status(200).send("<h1 class='text-3xl font-bold m-auto' style='display: flex;justify-content: center;align-items: center;height: 100vh;'>Hello From Master AI</h1>");
 });
 
 const startServer = async () => {
